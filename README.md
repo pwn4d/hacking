@@ -34,6 +34,6 @@
 - Individual Rooms | Please open in Obsidian (or similar markdown editor) to see images
     - Kenobi
     - Vulnversity
-    - [https://github.com/pwn4d/hacking/tree/main/thm/Basic%20Pentesting](Basic Pentesting)
-    - [https://github.com/pwn4d/hacking/tree/main/thm/root%20me](RootMe)
+    - [Basic Pentesting](https://github.com/pwn4d/hacking/tree/main/thm/Basic%20Pentesting)
+    - [RootMe](https://github.com/pwn4d/hacking/tree/main/thm/root%20me)
     - 
