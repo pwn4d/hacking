@@ -1,7 +1,8 @@
 ![banner](https://user-images.githubusercontent.com/86152883/234111065-15c965b6-d7cb-4428-a5ca-bf51bed480af.png)
 
 # hacking
-
+#### [Hack The Box](https://www.hackthebox.com/home/users/profile/688014)
+#### [Try Hack Me](https://tryhackme.com/p/Giddybox)
 #### This is a repository to showcase various hacking and cybersecurity achievments and writeups
 
 ## Completed TryHackMe rooms
@@ -36,4 +37,4 @@
     - Vulnversity
     - [Basic Pentesting](https://github.com/pwn4d/hacking/tree/main/thm/Basic%20Pentesting)
     - [RootMe](https://github.com/pwn4d/hacking/tree/main/thm/root%20me)
-    - 
+  
