@@ -1,0 +1,100 @@
+# Nmap 7.92 scan initiated Mon Sep 12 19:12:16 2022 as: nmap -A -sV -p- -vv -oN nmap-scan 10.10.198.172
+Nmap scan report for 10.10.198.172
+Host is up, received syn-ack (0.014s latency).
+Scanned at 2022-09-12 19:12:16 BST for 99s
+Not shown: 65521 closed tcp ports (conn-refused)
+PORT      STATE SERVICE            REASON  VERSION
+80/tcp    open  http               syn-ack Microsoft IIS httpd 8.5
+|_http-server-header: Microsoft-IIS/8.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+135/tcp   open  msrpc              syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn        syn-ack Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       syn-ack Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ssl/ms-wbt-server? syn-ack
+|_ssl-date: 2022-09-12T17:13:55+00:00; -1h00m00s from scanner time.
+| ssl-cert: Subject: commonName=steelmountain
+| Issuer: commonName=steelmountain
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2022-09-11T17:11:55
+| Not valid after:  2023-03-13T17:11:55
+| MD5:   cca3 9516 570a ed9a 07fe 6486 f0db 9d30
+| SHA-1: 8b24 4866 beed 4a8a 4925 01dc 95c9 e652 e6e6 ff91
+| -----BEGIN CERTIFICATE-----
+| MIIC3jCCAcagAwIBAgIQYty8yidmEpFFVtOAYBCChTANBgkqhkiG9w0BAQUFADAY
+| MRYwFAYDVQQDEw1zdGVlbG1vdW50YWluMB4XDTIyMDkxMTE3MTE1NVoXDTIzMDMx
+| MzE3MTE1NVowGDEWMBQGA1UEAxMNc3RlZWxtb3VudGFpbjCCASIwDQYJKoZIhvcN
+| AQEBBQADggEPADCCAQoCggEBALPr8DvTknDaD6yA2j9tVvAcFrO9rrgxkraosiXR
+| iZQQa546QQrP8uiWXVQScMmhE4Tehnavd9Li9aYhlxD4Kngdx1RV+d7DTLNRqrLw
+| T1faU81LQzeUk4+o5I26123ffo311YN5i2ZiABbHjddbWdJQdAYZB+xXrHTw4eHA
+| Cppij0g3KGAyBTswdtnc1TSOG2XVHVeHZtl3ESscWG+x9T5uW9EJS9U87ZUk9C89
+| BKwG8GafF8mNugyPefoFi5CEaM3JS0g6bK1qJGM61VHGJkGKJU8X0strtrt8aQ3+
+| 1Dlo0Ej/5DNZwHbhhiq4rMvSuFtADnRtEPoYzLX+jLMl1x8CAwEAAaMkMCIwEwYD
+| VR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBBQUAA4IB
+| AQCr71K/PMy9XZTh6QQWctt5HTrBomCuFH62QB4lW6736GseZjcqmJtlxCjF/lFK
+| /R3X6XGULetVAqKI3ywl1Sj25mF0mAFP+xK3hq3knJKieujrkV7cE+HSImkRlGm/
+| ZM9JYAZ6PH5taDrcYR0Fslt5mHaRSuhL1xGeU1QyYKpdTDbfFrcABka8ONK9ABOY
+| 0VQPWTxLMJbr23ySDdUxVADfAzugO+ncfV53EjwFCntRIFTqKuQcUUH4nWxrA/30
+| juA/e1TAWA+vMXMEl5TPHoCTP7unJSjCTvIvCR3eacyO45teFDTLzfTADSPOAjWl
+| dAiFhU2mb7u5ellz1Ac7VZtr
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: STEELMOUNTAIN
+|   NetBIOS_Domain_Name: STEELMOUNTAIN
+|   NetBIOS_Computer_Name: STEELMOUNTAIN
+|   DNS_Domain_Name: steelmountain
+|   DNS_Computer_Name: steelmountain
+|   Product_Version: 6.3.9600
+|_  System_Time: 2022-09-12T17:13:49+00:00
+5985/tcp  open  http               syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+47001/tcp open  http               syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49152/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49153/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49154/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49155/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49156/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49169/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49170/tcp open  msrpc              syn-ack Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1h00m00s, deviation: 0s, median: -1h00m00s
+| smb2-security-mode: 
+|   3.0.2: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2022-09-12T17:13:49
+|_  start_date: 2022-09-12T17:11:44
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 17742/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 30455/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 25946/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 32158/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| nbstat: NetBIOS name: STEELMOUNTAIN, NetBIOS user: <unknown>, NetBIOS MAC: 02:ec:f8:5d:4f:b9 (unknown)
+| Names:
+|   STEELMOUNTAIN<00>    Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   STEELMOUNTAIN<20>    Flags: <unique><active>
+| Statistics:
+|   02 ec f8 5d 4f b9 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 12 19:13:55 2022 -- 1 IP address (1 host up) scanned in 99.25 seconds
